@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+    overflow: hidden;
+    font-size: larger;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.card {
+    width: 540px;
+    height: 700px;
+    background-color: #140c00;
+    border-radius: 23px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 500px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    text-align: end;
+    font-size: 70px;
+    padding-top: 10px;
+    padding-right: 10px;
+    background-color: #c8f091;
+    color: aliceblue;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 480px;
+    height: 485px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.result {
+    background-color: #d8441b;
+    width: 208%;
+}
+
+button {
+    border: none;
+    border-radius: 15px;
+    background-color: #d8d8d8;
+    transition: all 0.3s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.display:active {
+    border: none;
+}
+
+button:hover {
+    background-color: #fcfcfc;
+}
+
+button.result:hover {
+    background-color: #da512b;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+
+}
